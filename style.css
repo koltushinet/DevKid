@@ -116,6 +116,26 @@ section {
     border-radius: 8px;
     padding: 20px;
     color: #fff;
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+.btn:focus {
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+.btn:active {
+    background-color: #0f65ac;
+    border: 1px solid #0f65ac;
+    color: #fff;
 }
 
 .nav_link {
