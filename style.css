@@ -120,6 +120,7 @@ section {
     border: 1px solid var(--main-color);
     transition: all 0.2s ease-in-out;
     outline: none;
+    font-weight: 700;
 }
 
 .btn:hover {
@@ -388,6 +389,11 @@ section {
     margin-bottom: 30px;
     margin-right: 20px;
     font-family: Montserrat;
+    border-radius: 10px;
+    padding: 20px 32px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 1px 2px -1px #808080;
 }
 
 .course__card:nth-child(3n) {
@@ -398,6 +404,7 @@ section {
     color: var(--main-color);
     font-size: 26px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .course__card__descr {
@@ -405,25 +412,22 @@ section {
     font-size: 14px;
     line-height: 1.4;
     margin-bottom: 20px;
-    height: 40px;
 }
 
 .course__card__span {
     display: block;
     background: #f6f6f6;
-    border: 1px solid transparent;
-    border-image: linear-gradient(45deg, #c8c8c86b, #ffffff56);
-    border-image-slice: 1;
+    box-shadow: -1px 1px 2px -1px #808080;
     border-radius: 7px;
     width: fit-content;
     margin-bottom: 10px;
-    padding: 8px 24px;
+    padding: 8px 12px;
     font-weight: 500;
     font-size: 12px;
-    letter-spacing: -0.1px;
+    letter-spacing: -0.3px;
 }
 
-.course__card__span:nth-child(3n) {
+.course__card__span:nth-child(6) {
     margin-bottom: 20px;
 }
 
@@ -431,4 +435,157 @@ section {
     font-size: 12px;
     font-weight: 700;
     padding: 13px;
+    margin-top: auto;
+    width: fit-content;
+}
+
+.sign_up__section {
+    background-image: url(./img/sign_up_bg.jpg);
+    border-radius: 16px;
+}
+
+.sign_up_section_container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 52px;
+    padding-top: 62px;
+}
+
+.sign_up__left_side {
+    font-family: Montserrat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 9px;
+}
+
+.sign_up__right_side {
+    font-family: Mulish;
+}
+
+.sign_up__header {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-bottom: 35px;
+    width: 482px;
+}
+
+.sign_up__header__em {
+    font-weight: 800;
+    font-style: normal;
+}
+
+.sign_up__btn_container {
+    border: 1px solid #80808049;
+    border-radius: 10px 14px 0px 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+
+.sign_up__btn {
+    font-size: 19px;
+    line-height: 1;
+    margin-right: 27px;
+}
+
+.sign_up__price {
+    font-weight: 600;
+    font-size: 24px;
+    margin-right: 15px;
+    color: #000;
+}
+
+.sign_up__old_price {
+    font-size: 18px;
+    color: #2c26209f;
+    text-decoration: line-through;
+    margin-right: 17px;
+}
+
+.sign_up__left_side_descr {
+    margin-top: auto;
+    max-width: 445px;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.sign_up__form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 30px;
+    width: 496px;
+    margin-bottom: 10px;
+}
+
+.sign_up__form__header {
+    font-weight: 600;
+    font-size: 20px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.sign_up__form__descr {
+    font-size: 14px;
+    color: #1e1e1e80;
+    margin-bottom: 21px;
+}
+
+.sign_up__form__input_descr {
+    margin-bottom: 11px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.sign_up__form__input {
+    border: none;
+    background-color: #fafafa;
+    border-radius: 7px;
+    padding: 12px 30px;
+    outline: none;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.sign_up__form__input_descr::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -73px;
+    left: 0;
+    height: 1px;
+    background-color: #6d6d6d41;
+    z-index: 5;
+}
+
+.sign_up__form__input:nth-child(4) {
+    margin-bottom: 35px;
+}
+
+.sign_up__form__input:nth-child(6) {
+    margin-bottom: 27px;
+}
+
+.sign_up__form__btn_container {
+    display: flex;
+    align-items: center;
+}
+
+.sign_up__form__btn {
+    margin-right: 14px;
+    padding: 14px 14px;
+    line-height: 1;
+}
+
+.sign_up__form__sub {
+    font-size: 11px;
+}
+
+.sign_up__form__sub__em {
+    font-weight: 700;
 }
