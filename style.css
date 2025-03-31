@@ -442,6 +442,8 @@ section {
 .sign_up__section {
     background-image: url(./img/sign_up_bg.jpg);
     border-radius: 16px;
+    position: relative;
+    z-index: 1;
 }
 
 .sign_up_section_container {
@@ -512,13 +514,26 @@ section {
 }
 
 .sign_up__form {
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: #fff;
     border-radius: 20px;
     padding: 30px 30px;
-    width: 496px;
+    max-width: 480px;
     margin-bottom: 10px;
+}
+
+.sign_up__form::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: #9abcff;
+    border-radius: 20px;
+    bottom: -33px;
+    left: -36px;
+    z-index: -1;
 }
 
 .sign_up__form__header {
@@ -531,7 +546,7 @@ section {
 .sign_up__form__descr {
     font-size: 14px;
     color: #1e1e1e80;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 }
 
 .sign_up__form__input_descr {
@@ -550,6 +565,18 @@ section {
     width: 100%;
     line-height: 1;
     font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid #fafafa;
+    transition: all 0.2s ease-in-out;
+}
+
+.sign_up__form__input:hover {
+    border: 1px solid #6d6d6d41;
+    background-color: #e9faff;
+}
+
+.sign_up__form__input:focus {
+    border: 1px solid #6d6d6d41;
 }
 
 .sign_up__form__input_descr::after {
@@ -564,11 +591,11 @@ section {
 }
 
 .sign_up__form__input:nth-child(4) {
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 }
 
 .sign_up__form__input:nth-child(6) {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
 }
 
 .sign_up__form__btn_container {
@@ -588,4 +615,115 @@ section {
 
 .sign_up__form__sub__em {
     font-weight: 700;
+}
+
+.advantages_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.advantages__card {
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    font-family: Montserrat;
+}
+
+.advantages__card:nth-child(2n) {
+    margin-right: 0;
+}
+
+.advantages__card:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+}
+
+.advantages__card__header {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--main-color);
+    height: 70px;
+}
+
+.advantages__card__descr {
+    font-size: 18px;
+    line-height: 1.44;
+}
+
+.advantages__btn {
+    display: block;
+    margin: auto;
+}
+
+.teachers_section_container {
+    font-family: Montserrat;
+}
+
+.teachers__descr {
+    margin-bottom: 40px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.teachers__carousel_container {
+    display: flex;
+    overflow-y: visible;
+    overflow-x: scroll;
+    padding-bottom: 300px;
+}
+
+.teachers__card {
+    width: 270px;
+    height: 302px;
+    position: relative;
+    font-family: Montserrat;
+    margin-right: 17px;
+    background-image: url(./img/teachers__card_bottom_1.jpg);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.teachers__card:last-child {
+    margin-right: 0;
+}
+
+.teachers__card__top {
+    width: 270px;
+    height: 100%;
+    padding: 22px 20px 22px 20px;
+    border-radius: 10px;
+    border: 1px solid #b8b8b8;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease-in-out;
+}
+
+.teachers__card:hover .teachers__card__top {
+    transform: translate(-50px, 250px) rotate(75deg);
+}
+
+.teachers__card__header {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.teachers__card__descr {
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+.teachers__card__img {
+    display: block;
+    margin: auto;
+
+    margin-bottom: 8px;
+}
+
+.teachers__card__p {
+    font-size: 14px;
 }
