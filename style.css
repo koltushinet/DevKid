@@ -678,7 +678,7 @@ section {
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding-bottom: 270px;
+    padding-bottom: 200px;
     z-index: 3;
 }
 
@@ -710,7 +710,8 @@ section {
 }
 
 .teachers__card:hover .teachers__card__top {
-    transform: translate(-50px, 250px) rotate(75deg);
+    transform: translate(-10px, 250px) rotate(90deg);
+    opacity: 0;
 }
 
 .teachers__card__header {
@@ -842,4 +843,159 @@ section {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.4;
+}
+
+.teams__btn {
+    display: block;
+    margin: auto;
+}
+
+.price_container {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.price__block {
+    background-color: #fafafa;
+    border: 1px solid #eeecec;
+    border-radius: 20px;
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px;
+    padding: 34px 32px 25px 32px;
+    box-shadow: -1px 1px 2px -1px #808080;
+}
+
+.price__block:last-child {
+    margin-right: 0;
+}
+
+.price__block__header {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.price__block__month__container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    background-color: #eeeeee;
+}
+
+.price__block__month__container:last-child {
+    margin-bottom: 0;
+}
+
+.price__block__month {
+    padding: 6px 75px 7px 72px;
+    color: #fff;
+    border: 1px solid #2761ca;
+    border-radius: 20px;
+    background-color: #2761ca;
+    font-weight: 500;
+}
+
+.price__block__price {
+    padding: 7px 28px 7px 20px;
+    font-weight: 400;
+}
+
+.price__btn {
+    display: block;
+    margin: auto;
+}
+
+.promo_container {
+    padding: 62px 156px;
+    background-image: url(./img/promo_bg.jpg);
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.promo__p {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 31px;
+}
+
+.promo__display {
+    padding: 21px 50px;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-bottom: 45px;
+    font-size: 40px;
+}
+
+.promo__btn {
+    background-color: #000;
+    border-radius: 15px;
+}
+
+.faq__header {
+    color: var(--main-color);
+}
+
+.faq__article {
+    padding: 25px 4px 25px 0;
+    border-top: 2px solid #9abcff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq__qa__container {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq__question {
+    font-weight: 600;
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq__answer {
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 300;
+    max-height: 0;
+    overflow: hidden;
+    margin-right: 40px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.faq__question__active {
+    margin-bottom: 13px;
+}
+
+.faq__answer__active {
+    max-height: 3em;
+}
+
+.faq__article__svg {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    min-width: 42px;
+    height: 42px;
+}
+
+.faq__article__svg__active {
+    transform: rotate(135deg);
+}
+
+.faq__qa__container:hover ~ .faq__article__svg {
+    transform: rotate(-90deg);
+}
+
+.faq__article__svg:hover {
+    transform: rotate(-90deg);
 }
